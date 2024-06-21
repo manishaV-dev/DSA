@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing and Accessing</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1 style="text-align: center;">Data Structure and Algorithm</h1>
+
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+        <input type="text" id="element">
+        <button style="margin-left: 10px;" onclick="getElement()">GetElement</button>
+    </div>
+    
+
+    <script>
+       
+        let data = [2, 78, 45, 12, 42, 0, 11, 18, 98]
+        // 1. Traversing using for loop
+        // for(let i=0; i<data.length; i++){
+        //     console.log(data[i])
+        // }
+
+        // Traversing using forEach Method
+        let fruits = ['Apple', 'Banana', 'Grapes']
+        fruits.forEach((fruit) => {
+            console.log(fruit);
+        })
+
+
+         // 2. Accesing
+         console.log(data[4]); // 42
+
+         // 3. Modifying
+        //  data[1] = 56;
+        //  console.log(data); // (9) [2, 56, 45, 12, 42, 0, 11, 18, 98]
+
+         // Combining Traversing and accessing
+
+         let numbers = [1, 5, 4, 8, 6, 9, 5]
+
+        //  using for loop
+        // for (let index = 0; index < numbers.length; index++) {
+        //     numbers[index] = numbers[index] * 2;
+        // }
+        // console.log(numbers); // (7) [2, 10, 8, 16, 12, 18, 10]
+
+         //  using forEach method
+
+         numbers.forEach((num, index) => {
+            numbers[index] = num * 2;
+         })
+         console.log(numbers); // (7) [2, 10, 8, 16, 12, 18, 10]
+
+
+         // Accessing value by clicking
+
+         function getElement(){
+            // now add validation, if index in not there just show some msg instead of undefined
+            let inputEl = document.getElementById('element').value;
+            if(inputEl < data.length && typeof parseInt(inputEl) === 'number' && !data < 0){
+                alert(data[inputEl])
+            }else{
+                alert("Please enter valid input")
+            }
+            
+            
+         
+         }
+
+    </script>
+</body>
+</html>
