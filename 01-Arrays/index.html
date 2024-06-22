@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSA - Array</title>
-    <script defer src="array-insert.js"></script>
+    <!-- <script defer src="array-insert.js"></script> -->
+    <script defer src="array-delete.js"></script>
 </head>
 <body style="background-color: #212121; color: #fff;">
     <h1 style="text-align: center; margin-bottom: 12px;">Data Structure and Algorithm</h1>
 
     <h2 style="text-align: center; margin-bottom: 12px;">Insert element in Array</h2>
 
-    <div style="display: flex; align-items: center; justify-content: center; margin-top: 12px;">
+    <div class="insertElementBox" style="display: flex; align-items: center; justify-content: center; margin-top: 12px;">
         <input type="text" id="position" placeholder="Enter Position" />
         <input type="text" id="newElement" placeholder="Enter new element" />
         <button style="margin-left: 10px;" onclick="insertEl()">Insert Element</button>
+    </div>
+
+
+    <h2 style="text-align: center; margin-bottom: 12px;">Delete element from Array</h2>
+    <div class="deleteElemetBox" style="display: flex; align-items: center; justify-content: center; margin-top: 12px;">
+        <input type="text" id="delPos" placeholder="Enter Position" />
+        <button style="margin-left: 10px;" onclick="deleteEl()">Delete Element</button>
     </div>
     
     <div style="text-align: center;">
