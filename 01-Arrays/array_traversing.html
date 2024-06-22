@@ -17,36 +17,36 @@
     <script>
        
         let data = [2, 78, 45, 12, 42, 0, 11, 18, 98]
-        // 1. Traversing using for loop
+// 1. Traversing using for loop -------------------------------------------------------------------
         // for(let i=0; i<data.length; i++){
         //     console.log(data[i])
         // }
 
-        // Traversing using forEach Method
+// Traversing using forEach Method -----------------------------------------------------------------
         let fruits = ['Apple', 'Banana', 'Grapes']
         fruits.forEach((fruit) => {
             console.log(fruit);
         })
 
 
-         // 2. Accesing
+// 2. Accesing -----------------------------------------------------------------
          console.log(data[4]); // 42
 
-         // 3. Modifying
+// 3. Modifying -----------------------------------------------------------------
         //  data[1] = 56;
         //  console.log(data); // (9) [2, 56, 45, 12, 42, 0, 11, 18, 98]
 
-         // Combining Traversing and accessing
+// Combining Traversing and accessing -----------------------------------------------------------------------------
 
          let numbers = [1, 5, 4, 8, 6, 9, 5]
 
-        //  using for loop
+//  using for loop -----------------------------------------------------------------
         // for (let index = 0; index < numbers.length; index++) {
         //     numbers[index] = numbers[index] * 2;
         // }
         // console.log(numbers); // (7) [2, 10, 8, 16, 12, 18, 10]
 
-         //  using forEach method
+//  using forEach method -----------------------------------------------------------------
 
          numbers.forEach((num, index) => {
             numbers[index] = num * 2;
@@ -54,7 +54,7 @@
          console.log(numbers); // (7) [2, 10, 8, 16, 12, 18, 10]
 
 
-         // Accessing value by clicking
+// Accessing value by clicking  -----------------------------------------------------------------
 
          function getElement(){
             // now add validation, if index in not there just show some msg instead of undefined
