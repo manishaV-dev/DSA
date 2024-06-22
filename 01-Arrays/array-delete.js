@@ -25,9 +25,7 @@ newArr.length = newArr.length - 1
 
 console.log(newArr);
 
-// In Input Field -------------------------------------------------------------------------------
-
-
+// In Input Field ----------------------------
 
 function deleteEl(){
     let data = [1, 5, 69, 8, 4, 65]
@@ -57,3 +55,9 @@ function deleteEl(){
     result.textContent = data;
 }
 
+
+
+// 2. By Javascript in-built method (splice) ----------------------------------------------------------------------
+let myArr = [2,4,6,7,8]
+myArr.splice(3, 1)
+console.log(myArr); // (4) [2, 4, 6, 8]
