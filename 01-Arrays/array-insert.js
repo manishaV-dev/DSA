@@ -10,6 +10,8 @@ Approach -- Here we use reverse loop to add element, means loop starts from last
 
 */
 
+// 1. Manually Approach ---------------------------------------------------------------------------------------------------------
+
 let element = [42, 56, 85, 95, 24, 10, 80]
 let newEl = 69;
 let position = 2;
@@ -74,3 +76,10 @@ function insertEl() {
 
   result.textContent = data;
 }
+
+// 2. By Javascript in-built method (splice) ----------------------------------------------------------------------
+
+let newArr = [54, 78, 56, 89, 99]
+newArr.splice(2, 0, 1000)
+// splice(index, deleteElement, insertElement)
+console.log(newArr); //  [54, 78, 1000, 56, 89, 99]
